@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(182, 179, 181);
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+}
+.col-left{
+    flex: 40%;
+    position: relative;
+    height: 700px;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+}
+.container .col-left .logo{
+    margin-bottom: 7rem;
+}
+.col-left .titre{
+    text-transform: uppercase;
+    font-size: 35px;
+    color:#546;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.text .info{
+    color:rgba(85, 68, 102, 0.281);
+    margin-bottom: 0.5rem;
+}
+.text .bouton button{
+    background-color: #546;
+    height: 40px;
+    border: none;
+    width: 150px;
+}
+.text .bouton button:hover{
+    background-color: rgba(85, 68, 102, 0.534);
+}
+.bouton a{
+    text-decoration: none;
+    font-weight: 200;
+    color:#fff;
+    text-align: center;
+    margin: 10px;
+}
+
+/*droite*/
+.col-right{
+   flex: 65%;
+   position: relative;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.280), rgba(0, 0, 0, 0.280)),
+                    url('background.jpg');
+    background-size: cover;
+    padding: 30px; 
+}
+.nav{
+    float: right;
+    margin-bottom: 10px;
+}
+.nav ul{
+    padding:5px;
+    border-bottom: 2px solid rgb(218, 213, 213);
+}
+.nav ul li{
+    margin-right: 55px;
+    display: inline-block;
+    justify-content: space-between;
+      
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li a:hover{
+    color: #546;
+    transition: all 0.5s;
+}
+.col-right .box{
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+    height: 175px;
+    width: 450px;
+    background-color:#fff; 
+}
+.box h3{
+    padding: 30px;
+    color:#546;
+    padding-bottom: 5px;
+}
+.box span{
+    padding:30px;
+    color: rgb(185, 182, 182);
+}
+.box p{
+    /*haut - droit - bas - gauche*/
+    padding: 1em 2em 2em;
+    color: rgb(54, 48, 48);
+    padding-bottom: 10px;
+}
+.box a{
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.699);
+}
+.box a:hover{
+    color: #546;
+}
